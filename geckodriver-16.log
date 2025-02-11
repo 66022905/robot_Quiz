@@ -1,0 +1,25 @@
+1739243432003	geckodriver	INFO	Listening on 127.0.0.1:50451
+1739243435141	mozrunner::runner	INFO	Running command: "C:\\Users\\CLASSROOM\\.cache\\selenium\\firefox\\win64\\135.0\\firefox.exe" "--marionette" "--remote-debugg ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\CLASSR~1\\AppData\\Local\\Temp\\rust_mozprofilezb0nZL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1739243435503	Marionette	INFO	Marionette enabled
+1739243435601	Marionette	INFO	Listening on port 50465
+WebDriver BiDi listening on ws://127.0.0.1:50452
+Read port: 50465
+1739243435746	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50452/devtools/browser/a0fb8f5a-11fd-43b4-9d90-98fafd2967a1
+JavaScript warning: https://automationexercise.com/static/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1739243441550	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true, line 87: Script terminated by timeout at:
+S@https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true:87:332
+Uf/this.T@https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true:85:177
+
+JavaScript warning: http://automationexercise.com/static/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://automationexercise.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://automationexercise.com."
+JavaScript warning: https://automationexercise.com/static/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://automationexercise.com/static/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1739243451139	Marionette	INFO	Stopped listening on port 50465
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

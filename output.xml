@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.4 on win32)" generated="2025-02-11T10:12:29.997334" rpa="false" schemaversion="5">
+<suite id="s1" name="basicRF02" source="d:\New folder (7)\Testcase\basicRF02.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-02-11T10:12:30.192800" level="INFO">Opening browser 'firefox' to base url 'http://automationexercise.com'.</msg>
+<arg>http://automationexercise.com</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T10:12:30.192800" elapsed="8.286116"/>
+</kw>
+<test id="s1-t1" name="Check Logout" line="48">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:12:38.480842" level="INFO">Opening url 'http://automationexercise.com/login'</msg>
+<arg>${LOGIN_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-02-11T10:12:38.479948" elapsed="2.883349"/>
+</kw>
+<kw name="Input User Name">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@name="email"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:12:41.368285" elapsed="0.026926"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:12:41.396208" level="INFO">Typing text '788@example.com' into text field '//*[@name="email"]'.</msg>
+<arg>//*[@name="email"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T10:12:41.395211" elapsed="0.058846"/>
+</kw>
+<arg>${USERNAME}</arg>
+<status status="PASS" start="2025-02-11T10:12:41.366293" elapsed="0.088763"/>
+</kw>
+<kw name="Input Password">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@name="password"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:12:41.456049" elapsed="0.007983"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:12:41.465025" level="INFO">Typing text '444444' into text field '//*[@name="password"]'.</msg>
+<arg>//*[@name="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T10:12:41.464032" elapsed="0.015955"/>
+</kw>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-02-11T10:12:41.455056" elapsed="0.024931"/>
+</kw>
+<kw name="Click Login Button">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@data-qa="login-button"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:12:41.481983" elapsed="0.011969"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:12:41.493952" level="INFO">Clicking element '//*[@data-qa="login-button"]'.</msg>
+<arg>//*[@data-qa="login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T10:12:41.493952" elapsed="1.982266"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:12:41.480984" elapsed="1.995234"/>
+</kw>
+<kw name="Wait For Login Page To Load">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@href="/logout"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:12:43.477214" elapsed="0.015957"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:12:43.477214" elapsed="0.015957"/>
+</kw>
+<kw name="Click Logout Button">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@href="/logout"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:12:43.494168" elapsed="0.010007"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:12:43.504175" level="INFO">Clicking element '//*[@href="/logout"]'.</msg>
+<arg>//*[@href="/logout"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T10:12:43.504175" elapsed="1.332180"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:12:43.494168" elapsed="1.342187"/>
+</kw>
+<kw name="Wait For Home Page After Logout">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//a[contains(text(),'Signup / Login')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:12:44.838325" elapsed="0.007983"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:12:44.837336" elapsed="0.008972"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:12:44.855279" level="INFO">${current_url} = https://automationexercise.com/login</msg>
+<var>${current_url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-02-11T10:12:44.846308" elapsed="0.009970"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>https://automationexercise.com/login</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-02-11T10:12:44.856278" elapsed="0.000995"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:12:38.479948" elapsed="6.377325"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T10:12:44.860272" elapsed="2.676471"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:12:30.001319" elapsed="17.536422"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="basicRF02" id="s1" pass="1" fail="0" skip="0">basicRF02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
