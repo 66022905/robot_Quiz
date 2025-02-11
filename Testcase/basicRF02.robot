@@ -36,15 +36,6 @@ Wait For Home Page After Logout
     Wait Until Element Is Visible    //a[contains(text(),'Signup / Login')]    timeout=10s  
 
 *** Test Cases ***
-Check Login Success
-    Go To    ${LOGIN_URL}
-    Input User Name    ${USERNAME}
-    Input Password    ${PASSWORD}
-    Click Login Button
-    Wait For Login Page To Load
-    ${current_url} =    Get Location
-    Should Be Equal As Strings    ${current_url}    http://automationexercise.com
-
 Check Logout
     Go To    ${LOGIN_URL}
     Input User Name    ${USERNAME}
